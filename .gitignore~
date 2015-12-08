@@ -33,4 +33,5 @@ exe
 *.dSYM/
 
 # Others
+*.pdf
 
