@@ -181,14 +181,14 @@ int* percepone (int ages, int n, int x[][31],
 	for (j = 0; j < 31; ++j) {
 	  w[j] += n * err * x[i][j];
 	}
+	E = 1
       }
 
-      E += err;
     }
 
     ++t;
 
-  } while (t < ages && E > 0);
+  } while (E > 0);
 
 
   //print new W
