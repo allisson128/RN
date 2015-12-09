@@ -22,39 +22,39 @@ int main () {
   int *w;
   int **w2;
 
-  /* for (i = 0; i < 2; ++i) { */
-  /*   printf ("\nX%d:\n", i); */
-  /*   printDisplay (x[i], 6, 5); */
-  /* } */
-  /* getchar(); */
-  /* // 1. */
-  /* // a) b) */
-  /* w = percepone (ages, learning_rate, x, d, 2); */
+  for (i = 0; i < 2; ++i) {
+    printf ("\nX%d:\n", i);
+    printDisplay (x[i], 6, 5);
+  }
+  getchar();
+  // 1.
+  // a) b)
+  w = percepone (ages, learning_rate, x, d, 2);
 
-  /* //verification */
-  /* for (i = 0; i < 2; ++i) */
-  /*   printf ("%d\n", y (x[i], w, 31, fdegrau)); */
+  //verification
+  for (i = 0; i < 2; ++i)
+    printf ("%d\n", y (x[i], w, 31, fdegrau));
   
 
-  /* // c) */
-  /* for (i = 0; i < 10; ++i) { */
-  /*   for (j = 0; j < 2; ++j) { */
-  /*     printf ("\nDistorcido %d %d :",i + 1, j); */
-  /*     printDisplay (dist[i][j], 6, 5); */
-  /*     printf (" Resultado %d", y (dist[i][j], w, 31, fdegrau)); */
-  /*   } */
-  /*   getchar(); */
-  /*   putchar ('\n'); */
-  /* } */
+  // c)
+  for (i = 0; i < 10; ++i) {
+    for (j = 0; j < 2; ++j) {
+      printf ("\nDistorcido %d %d :",i + 1, j);
+      printDisplay (dist[i][j], 6, 5);
+      printf (" Resultado %d", y (dist[i][j], w, 31, fdegrau));
+    }
+    getchar();
+    putchar ('\n');
+  }
 
-  /* // d) */
-  /* for (j = 2; j < 6; ++j) { */
-  /*   printf ("\nBem diferente %d:",j); */
-  /*   printDisplay (x[j], 6, 5); */
-  /*   printf (" Resultado %d", y (x[j], w, 31, fdegrau)); */
-  /*   putchar ('\n'); */
-  /*   getchar(); */
-  /* } */
+  // d)
+  for (j = 2; j < 6; ++j) {
+    printf ("\nBem diferente %d:",j);
+    printDisplay (x[j], 6, 5);
+    printf (" Resultado %d", y (x[j], w, 31, fdegrau));
+    putchar ('\n');
+    getchar();
+  }
   
 
   // 2.
@@ -97,56 +97,56 @@ int main () {
     getchar();
   }
 
-  /* // 3. */
-  /* printf ("\nExercicio 3\n"); */
-  /* for (i = 0; i < 6; ++i) { */
-  /*   printf ("\nX%d:\n", i); */
-  /*   printDisplay (x[i], 6, 5); */
-  /* } */
-  /* getchar(); */
-  /* // a) b) */
-  /* w2 = percepthree (ages, learning_rate, x, d3, 6); */
+  // 3.
+  printf ("\nExercicio 3\n");
+  for (i = 0; i < 6; ++i) {
+    printf ("\nX%d:\n", i);
+    printDisplay (x[i], 6, 5);
+  }
+  getchar();
+  // a) b)
+  w2 = percepthree (ages, learning_rate, x, d3, 6);
 
-  /* //verification */
-  /* for (i = 0; i < 6; ++i) { */
-  /*   printf ("\nPara X%d:\n", i); */
-  /*   printf ("y1 = %d\n", y (x[i], w2[0], 31, fdegrau)); */
-  /*   printf ("y2 = %d\n", y (x[i], w2[1], 31, fdegrau)); */
-  /*   printf ("y3 = %d\n", y (x[i], w2[2], 31, fdegrau)); */
-  /*   printf ("y4 = %d\n", y (x[i], w2[3], 31, fdegrau)); */
-  /*   printf ("y5 = %d\n", y (x[i], w2[4], 31, fdegrau)); */
-  /*   printf ("y6 = %d\n", y (x[i], w2[5], 31, fdegrau)); */
-  /*   getchar(); */
-  /* } */
+  //verification
+  for (i = 0; i < 6; ++i) {
+    printf ("\nPara X%d:\n", i);
+    printf ("y1 = %d\n", y (x[i], w2[0], 31, fdegrau));
+    printf ("y2 = %d\n", y (x[i], w2[1], 31, fdegrau));
+    printf ("y3 = %d\n", y (x[i], w2[2], 31, fdegrau));
+    printf ("y4 = %d\n", y (x[i], w2[3], 31, fdegrau));
+    printf ("y5 = %d\n", y (x[i], w2[4], 31, fdegrau));
+    printf ("y6 = %d\n", y (x[i], w2[5], 31, fdegrau));
+    getchar();
+  }
   
-  /* // c) */
-  /* for (i = 0; i < 2; ++i) { */
-  /*   for (j = 0; j < 6; ++j) { */
-  /*     printf ("\nDistorcido %d %d :",i + 1, j); */
-  /*     printDisplay (dist[i][j], 6, 5); */
-  /*     printf ("y1 = %d\n", y (dist[i][j], w2[0], 31, fdegrau)); */
-  /*     printf ("y2 = %d\n", y (dist[i][j], w2[1], 31, fdegrau)); */
-  /*     printf ("y3 = %d\n", y (dist[i][j], w2[2], 31, fdegrau)); */
-  /*     printf ("y4 = %d\n", y (dist[i][j], w2[3], 31, fdegrau)); */
-  /*     printf ("y5 = %d\n", y (dist[i][j], w2[4], 31, fdegrau)); */
-  /*     printf ("y6 = %d\n", y (dist[i][j], w2[5], 31, fdegrau)); */
-  /*   } */
-  /*   getchar(); */
-  /*   putchar ('\n'); */
-  /* } */
+  // c)
+  for (i = 0; i < 2; ++i) {
+    for (j = 0; j < 6; ++j) {
+      printf ("\nDistorcido %d %d :",i + 1, j);
+      printDisplay (dist[i][j], 6, 5);
+      printf ("y1 = %d\n", y (dist[i][j], w2[0], 31, fdegrau));
+      printf ("y2 = %d\n", y (dist[i][j], w2[1], 31, fdegrau));
+      printf ("y3 = %d\n", y (dist[i][j], w2[2], 31, fdegrau));
+      printf ("y4 = %d\n", y (dist[i][j], w2[3], 31, fdegrau));
+      printf ("y5 = %d\n", y (dist[i][j], w2[4], 31, fdegrau));
+      printf ("y6 = %d\n", y (dist[i][j], w2[5], 31, fdegrau));
+    }
+    getchar();
+    putchar ('\n');
+  }
 
-  /* // d) */
-  /* for (j = 0; j < 6; ++j) { */
-  /*   printf ("\nBem diferente %d:",j); */
-  /*   printDisplay (letter[j], 6, 5); */
-  /*   printf ("y1 = %d\n", y (letter[j], w2[0], 31, fdegrau)); */
-  /*   printf ("y2 = %d\n", y (letter[j], w2[1], 31, fdegrau)); */
-  /*   printf ("y3 = %d\n", y (letter[j], w2[2], 31, fdegrau)); */
-  /*   printf ("y4 = %d\n", y (letter[j], w2[3], 31, fdegrau)); */
-  /*   printf ("y5 = %d\n", y (letter[j], w2[4], 31, fdegrau)); */
-  /*   printf ("y6 = %d\n", y (letter[j], w2[5], 31, fdegrau)); */
-  /*   getchar(); */
-  /* } */
+  // d)
+  for (j = 0; j < 6; ++j) {
+    printf ("\nBem diferente %d:",j);
+    printDisplay (letter[j], 6, 5);
+    printf ("y1 = %d\n", y (letter[j], w2[0], 31, fdegrau));
+    printf ("y2 = %d\n", y (letter[j], w2[1], 31, fdegrau));
+    printf ("y3 = %d\n", y (letter[j], w2[2], 31, fdegrau));
+    printf ("y4 = %d\n", y (letter[j], w2[3], 31, fdegrau));
+    printf ("y5 = %d\n", y (letter[j], w2[4], 31, fdegrau));
+    printf ("y6 = %d\n", y (letter[j], w2[5], 31, fdegrau));
+    getchar();
+  }
   
   return 0;
 }
